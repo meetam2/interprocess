@@ -1,0 +1,43 @@
+/* full-page reset */
+    html,body {
+      height: 100%;
+      margin: 0;
+      font-family: Roboto, "Helvetica Neue", Arial;
+      background: #1f1f1f;
+      align-items: left;
+    }
+body {
+  
+      transform: rotate(90deg) translateY(-100vw);
+        transform-origin: top left;
+        width: 100vh;
+      height: 100vw;
+}
+
+    /* container whose height is half the viewport height */
+    .half-height {
+      height: 50vw;                 /* half of the window height */
+      box-sizing: border-box;
+      padding: 1.5rem;
+      display: flex;
+      align-items: top;          /* vertically center the text block inside the container */
+      justify-content: left;      /* horizontally center */
+    }
+
+    /* the text block */
+    .text-block {
+      width: 80%;                   /* change to control wrapping width */
+      max-width: 900px;
+      white-space: normal;          /* allow wrapping */
+      word-wrap: break-word;        /* break long words if needed */
+      overflow-wrap: break-word;
+      text-align: left;
+      /* responsive font: scales with viewport height (so it relates to the container height) */
+      font-size: 12vw;
+      line-height: 1.1;
+      margin: 0;
+      color: #F3CE32;
+    }
+
+    /* optional: show the container boundary for clarity */
+    /* .half-height { border: 1px dashed #d0d6e0; } */
